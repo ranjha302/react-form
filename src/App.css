@@ -1,0 +1,676 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  color: #fff;
+  background: linear-gradient(to right, #0d6efd, #1a73e8);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.75);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(13, 110, 253, 0.9);
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(-45deg);
+  transition: left 0.3s ease;
+}
+
+.btn:hover::before {
+  left: 100%;
+  transition: left 0.3s ease;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.table th, .table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f4f6f7;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.table tbody tr:hover {
+  background-color: #e1e8f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.form-control {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #bdc3c7;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  
+  background-size: cover;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  margin: 5%;
+  padding: 5% 400px;
+  font-size: large;
+  /* text-align: center; */
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  font-weight: bold;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-select {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  -moz-padding-start: calc(0.75rem - 3px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.btn {
+  color: #fff;
+  background: linear-gradient(to right, #0d6efd, #1a73e8);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.75);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(13, 110, 253, 0.9);
+}
+
+/* Lighting Effect */
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(-45deg);
+  transition: left 0.3s ease;
+}
+
+/* Add animation on hover */
+.btn:hover::before {
+  left: 100%;
+  transition: left 0.3s ease;
+}
+
+/* General Styles */
+body {
+  /* background-image:url(""); */
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #007bff;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Form Styles */
+.form-label {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-control,
+.form-select {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Select Styles */
+.form-select {
+  padding: 0.75rem;
+  -moz-padding-start: calc(0.75rem - 3px);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+}
+
+/* Button Styles */
+.btn {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+  box-shadow: 0 0.5rem 1rem rgba(0, 123, 255, 0.2);
+}
+
+/* Alert Styles */
+.alert {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 0.375rem;
+  border: 1px solid transparent;
+  max-width: 600px;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+                                                  //Table
+.table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+
+.table th, .table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.table thead th {
+  background-color: #f4f4f4;
+  color:black;
+  font-weight: bold;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table th {
+  position: sticky;
+  top: 0;
+  background-color: #6c7ae0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.table td {
+  color: #555;
+}
+
+.table td:last-child {
+  white-space: nowrap;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.btn {
+  background-color:blue; /* Green background color */
+  color: #fff; /* White text */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 12px 24px; /* Spacing inside the button */
+  font-size: 16px; /* Text size */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.btn:hover {
+  background-color:yellow; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 0, 0, 0.4); /* Red shadow on hover */
+}
+
+.btn:active {
+  background-color: #1e7e34; /* Even darker green when clicked */
+  transform: scale(0.98); /* Slightly shrink button on click */
+}
+
+.btn:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: red}
+  .btn-action {
+    background-color:green; /* Blue background for edit button */
+    color: #fff; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 3px; /* Slightly rounded corners */
+    padding: 6px 12px; /* Padding inside the button */
+    margin: 0 4px; /* Margin between buttons */
+    font-size: 14px; /* Text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  }
+  
+  .btn-action:hover {
+    background-color:red; /* Darker blue on hover */
+  }
+  
+  .btn-action.edit {
+    background-color: green; /* Red background for delete button */
+  }
+  
+  .btn-action.delete:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  
+  /* General Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Table Header */
+.table th {
+  background-color: #2c3e50; /* Dark Blue/Gray for professionalism */
+  color: #ecf0f1; /* Light gray for text */
+  font-size: 16px;
+  text-align: center;
+  padding: 14px;
+  border-top: 2px solid #2980b9; /* Blue border for a crisp look */
+  border-bottom: 2px solid #2980b9;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Table Header Hover Effect */
+.table th:hover {
+  background-color: #2980b9; /* Brighten on hover */
+}
+
+/* Table Rows */
+.table tbody tr {
+  transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f4f6f7; /* Light gray for even rows */
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* White background for odd rows */
+}
+
+.table tbody tr:hover {
+  background-color: #e1e8f0; /* Soft blue when hovering over row */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for hover effect */
+}
+
+.table td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #ecf0f1; /* Light gray border for each row */
+  font-size: 14px;
+  color: #34495e; /* Dark text for readability */
+}
+
+.table td:hover {
+  background-color: #f1f1f1; /* Light hover effect */
+}
+
+/* Input Fields */
+.form-control {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #bdc3c7; /* Subtle gray border */
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #3498db; /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); /* Blue glow on focus */
+}
+
+/* Submit Button */
+.btn {
+  background-color: #3498db; /* Blue background */
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.btn-action {
+  background-color: green;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-action:hover {
+  background-color: #c82333;
+}
+
+.btn-action.edit {
+  background-color: green;
+}
+
+.btn-action.delete:hover {
+  background-color: #c82333;
+}
+
+
+/* Action Buttons (Edit/Delete) */
+background: linear-gradient(45deg, #2ecc71, #27ae60); /* Linear gradient from green to darker green */
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 14px;
+text-transform: capitalize;
+transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow for glow effect */
+margin-right: 10px; /* Space between buttons */
+
+/* Glow effect */
+box-shadow: 0 0 10px rgba(46, 204, 113, 0.8), 0 0 20px rgba(46, 204, 113, 0.6), 0 0 30px rgba(46, 204, 113, 0.4); 
+
+/* Hover effects */
+:hover {
+  background: linear-gradient(45deg, #27ae60, #2ecc71); /* Invert gradient on hover */
+  box-shadow: 0 0 20px rgba(46, 204, 113, 1), 0 0 30px rgba(46, 204, 113, 0.8), 0 0 40px rgba(46, 204, 113, 0.6);
+}
+
+
+.btn-action:hover {
+  background-color: #27ae60; /* Darker green on hover */
+}
+
+.btn-action.delete {
+  background-color: #e74c3c; /* Red background for Delete */
+}
+
+.btn-action.delete:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Table Cell Styling */
+td {
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Optional: Table Caption */
+h2 {
+  text-align: center;
+  color: #34495e;
+  font-size: 24px;
+  margin-top: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Spacing and Alignment for the Form and Table */
+.form-container {
+  margin-bottom: 40px; /* Added more space below the form */
+  width: 80%;
+  margin: 0 auto;
+}
+
+.table-container {
+  margin-top: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Adding spacing around the page */
+body {
+  padding: 20px;
+  background-color: #ecf0f1;
+}
+
+/* Button Styles */
+.btn {
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 12px 24px; /* Spacing inside the button */
+  font-size: 16px; /* Text size */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.btn:active {
+  background-color: #004085; /* Even darker blue when clicked */
+  transform: scale(0.98); /* Slightly shrink button on click */
+}
+
+.btn:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Container for the entire profile section */
+.user-profile-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile-container h2 {
+  font-size: 24px;
+  color: #006633; /* Green color for the title */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Profile pictures section */
+.profile-pictures {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.profile-pictures img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Table styling */
+.user-data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-data-table th,
+.user-data-table td {
+  padding: 12px 20px;
+  text-align: left;
+}
+
+.user-data-table th {
+  background-color: #006633;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.user-data-table tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.user-data-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.user-data-table td {
+  border-top: 1px solid #ddd;
+}
+
+/* For alternating rows background colors */
+.user-data-table tr:hover {
+  background-color: #e0e0e0;
+}
